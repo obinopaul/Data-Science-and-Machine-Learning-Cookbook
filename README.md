@@ -1,7 +1,8 @@
 # Data Science and Machine Learning Cookbook
  A collection of popular and reusable datascience codes and operations for Data Science and Machine Learning
 
-Table of Contents \n
+Table of Contents 
+
 1  Data Analytics
 1.1  Documentation
 1.2  Import Libraries
