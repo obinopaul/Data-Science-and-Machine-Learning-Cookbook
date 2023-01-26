@@ -25,4 +25,5 @@ Table of Contents
 1.4  Preprocessing Structured Images                                             
 1.5  Preprocessing Structured Text                                                                    
 2  Machine learning                                                            
-2.1  Preparation of data for modeling                                                       
+2.1  Preparation of data for modeling
+
