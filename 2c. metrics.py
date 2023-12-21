@@ -15,15 +15,14 @@ from sklearn.model_selection import learning_curve, cross_val_score, KFold, trai
 from imblearn.over_sampling import RandomOverSampler
 from imblearn.under_sampling import RandomUnderSampler
 from sklearn.metrics import (
-    confusion_matrix,
-    accuracy_score,
-    precision_score,
-    recall_score,
-    f1_score,
-    average_precision_score,
-    roc_curve,
-    auc,
-)
+    confusion_matrix, accuracy_score, precision_score,  recall_score, f1_score,
+    average_precision_score, roc_curve, auc,
+    )
+from sklearn.model_selection import (
+    validation_curve, learning_curve, cross_val_score, KFold, train_test_split
+    )
+from yellowbrick.model_selection import CVScores
+from yellowbrick.classifier import ClassPredictionError
 
 def true_positives(y_true, y_pred):
     tp = 0
@@ -467,6 +466,69 @@ def print_classification_performance2class_report(model,X_test,y_test):
     return y_pred,ACC,PC,RC,FS,AP,roc_auc,gini
 
 
+
+def print_classification_performance_multiclass_report(model, X_test, y_test):
+    """
+    Function to print standard classification metrics report for multiclass classification.
+    """
+    sns.set()
+    y_pred = model.predict(X_test)
+    y_pred_proba = model.predict_proba(X_test)
+
+    # Confusion Matrix
+    conf_mat = confusion_matrix(y_test, y_pred)
+    
+    # Accuracy
+    ACC = accuracy_score(y_test, y_pred)
+    
+    # Precision, Recall, F1-Score
+    # Note: To calculate average precision for multiclass, a "One-vs-Rest" approach is typically used.
+    PC = precision_score(y_test, y_pred, average='weighted', zero_division=0)
+    RC = recall_score(y_test, y_pred, average='weighted', zero_division=0)
+    FS = f1_score(y_test, y_pred, average='weighted', zero_division=0)
+    
+    # ROC AUC Calculation for Multiclass
+    # Note: This requires handling probabilities for each class separately
+    roc_auc = roc_auc_score(y_test, y_pred_proba, multi_class='ovr')
+    
+    print("Accuracy: {:.2%}".format(ACC))
+    print("Precision: {:.2%}".format(PC))
+    print("Recall: {:.2%}".format(RC))
+    print("F1 Score: {:.2%}".format(FS))
+    print("ROC AUC (One-vs-Rest): {:.2%}".format(roc_auc))
+
+    fig = plt.figure(figsize=(12, 6))
+    
+    # Confusion Matrix Heatmap
+    plt.subplot(121)
+    sns.heatmap(conf_mat, annot=True, fmt="d", cmap=plt.cm.Blues, xticklabels=model.classes_, yticklabels=model.classes_)
+    plt.xlabel('Predicted')
+    plt.ylabel('True')
+    plt.title('Confusion Matrix')
+
+    # ROC Curve - One-vs-Rest approach
+    plt.subplot(122)
+    fpr = dict()
+    tpr = dict()
+    for i in range(len(model.classes_)):
+        fpr[i], tpr[i], _ = roc_curve(y_test, y_pred_proba[:, i], pos_label=i)
+        plt.plot(fpr[i], tpr[i], label=f'Class {i} (area = {auc(fpr[i], tpr[i]):.2f})')
+    
+    plt.plot([0, 1], [0, 1], 'k--')
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title('ROC Curve (One-vs-Rest)')
+    plt.legend(loc="lower right")
+
+    plt.tight_layout()
+    plt.show()
+
+    # Return performance metrics
+    return y_pred, ACC, PC, RC, FS, roc_auc
+
+
 def plot_predictions(y_pred, y_test): 
     """
     Plots the predicted and actual values on separate scatter plots.
@@ -627,7 +689,7 @@ def print_regression_performance_report(model, X_test, y_test):
     plt.title('Actual vs Predicted')
     plt.show()
     
-    return mse, rmse, r2
+    return mse, rmse, r2, y_pred
 
 def evaluate_model_performance(model, X, y):
     # Generate predictions
