@@ -5,7 +5,15 @@
 
 -- ENTITY DEFINITIONS
 -- Entity: Represents a real-world object or concept in a database.
--- Example Entities: Customers, Orders, Products, Students, Courses, Employees, etc.
+    -- Types: 
+        -- Strong Entity - Exists independently (e.g., Customer, Product)
+        -- Weak Entity - An entity that cannot be uniquely identified by its attributes alone (e.g., OrderItem, Address)
+        -- Associative Entity - Represents a relationship (e.g., OrderDetails)
+
+    -- Shapes: 
+        -- Strong Entity (Single Rectangle)
+        -- Weak Entity (Double Rectangle)
+        -- Associative Entity (Diamond)
         CREATE TABLE Users (
             UserID INT PRIMARY KEY,
             UserName VARCHAR(100)
@@ -19,20 +27,57 @@
 
 -- ATTRIBUTE DEFINITIONS
 -- Attributes: Descriptive properties of an entity.
--- Example Attributes for an "Employee" Entity: EmployeeID, Name, DepartmentID, HireDate, Salary.
+    -- Types: 
+        -- Simple - Cannot be divided further (e.g., Name, Age) 
+        -- Composite - Composed of multiple simple attributes (e.g., Address consisting of Street, City, State)
+        -- Derived - Calculated from other attributes (e.g., Age derived from Date of Birth)
+        -- Multi-valued - Can hold multiple values (e.g., Phone Numbers)
+        -- Key - Uniquely identifies an entity (e.g., StudentID)
+        -- Foreign - Links entities together (e.g., StudentID in Orders table)
+    -- Shapes: 
+        -- Simple Attribute (Oval)
+        -- Composite Attribute (Double Oval)
+        -- Derived Attribute (Oval with a Dashed Outline)
+        -- Multi-valued Attribute (Double Oval with Dashed Lines)
+        -- Key Attribute (Oval with an Underlined Oval)
+        -- Foreign Key Attribute (Oval with Dotted Underline)
+
+        CREATE TABLE Students (
+            StudentID INT PRIMARY KEY,
+            FirstName VARCHAR(50),
+            LastName VARCHAR(50),
+            DateOfBirth DATE,
+            GPA DECIMAL(3, 2)
+        );
 
 -- RELATIONSHIPS
--- Relationships define how entities are connected to each other:
--- One-to-One (1:1): A single record in Table A corresponds to a single record in Table B.
--- One-to-Many (1:M): A single record in Table A corresponds to multiple records in Table B.
--- Many-to-Many (M:N): Multiple records in Table A correspond to multiple records in Table B.
+    -- Relationships define how entities are connected to each other:
+    -- One-to-One (1:1): A single record in Table A corresponds to a single record in Table B.
+    -- One-to-Many (1:M): A single record in Table A corresponds to multiple records in Table B.
+    -- Many-to-Many (M:N): Multiple records in Table A correspond to multiple records in Table B.
+    -- Shapes: 
+            -- One-to-One (1:1) (Diamond with a Straight Line between entities or a Directed Line (→) for "one" on both sides.)
+            -- One-to-Many (1:M) (Diamond with a Crow's Foot on one side or a Directed Line (→) on the "one" side and an Undirected Line (—) on the "many" side.)
+            -- Many-to-Many (M:N) (Diamond with Double Crow's Foot on both sides or Undirected Lines (—) on both sides)
+
+-- Participation Constraints:
+    -- Total Participation: Every entity in A must be related to an entity in B.
+        -- Represented by a double line connecting the entity to the relationship
+    -- Partial Participation: Some entities in A may not be related to any entity in B.
+        -- Represented by a single line connecting the entity to the relationship
+
 
 -- NOTES
 -- - Primary Keys ensure data uniqueness and integrity. (types include simple primary key, composite, natural, and surrogate primary keys)
+        -- - Natural Primary Keys are based on existing data attributes (e.g., SSN, email).
+        -- - Surrogate Primary Keys are system-generated unique identifiers (e.g., auto-incremented integers).
+        -- - Simple Primary Keys consist of a single column, while composite keys involve multiple columns.
         ProductID INT PRIMARY KEY,
         PRIMARY KEY (ProductID) 
--- Composite Key: Combination of two or more columns to uniquely identify records.
-        PRIMARY KEY (OrderID, ProductID) 
+        -- Composite Key: Combination of two or more columns to uniquely identify records.
+                PRIMARY KEY (OrderID, ProductID) 
+-- - Super Keys are a set of one or more columns that can uniquely identify a record in a table. Every primary key is a super key, but not every super key is a primary key.
+-- - Candidate Keys are minimal super keys, meaning no proper subset of the key can uniquely identify a record. One candidate key is chosen as the primary key, and others can serve as unique identifiers.
 -- - Foreign Keys enforce relationships between tables.
         FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
 -- UNIQUE Key: Ensures all values in a column are unique.
@@ -40,6 +85,9 @@
 -- - Relationships can be established using primary keys and foreign keys.
 -- - Consider adding UNIQUE constraints for columns that must be unique.
 
+-- - Natural Primary Keys are based on existing data attributes (e.g., SSN, email).
+-- - Surrogate Primary Keys are system-generated unique identifiers (e.g., auto-incremented integers).
+-- - Simple Primary Keys consist of a single column, while composite keys involve multiple columns.
 
 
 ---------------------------------------------------------------------
@@ -99,11 +147,42 @@ JSON (stored as NVARCHAR)       -- JSON data stored in NVARCHAR columns
 
 
 ;---------------------------------------------------------------------
--- Get all Database Tables
+-- Most Helpful SQL Commands
 ---------------------------------------------------------------------
 
+-- Get all Database Tables
 SELECT * FROM INFORMATION_SCHEMA.TABLES 
 WHERE TABLE_TYPE = 'BASE TABLE';
+
+-- Get Column Names and Data Types
+SELECT COLUMN_NAME, DATA_TYPE
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'table_name';
+
+-- Get Primary Key Columns of a Table
+SELECT COLUMN_NAME
+FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE TABLE_NAME = 'table_name' AND CONSTRAINT_NAME = 'PRIMARY';
+
+-- Get Foreign Key Columns of a Table
+SELECT COLUMN_NAME
+FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE TABLE_NAME = 'table_name' AND CONSTRAINT_NAME LIKE 'FK%';
+
+-- Get Table Constraints
+SELECT CONSTRAINT_NAME, CONSTRAINT_TYPE
+FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS
+WHERE TABLE_NAME = 'table_name';
+
+-- Get all Indexes of a Table
+SELECT INDEX_NAME
+FROM INFORMATION_SCHEMA.INDEXES
+WHERE TABLE_NAME = 'table_name';
+
+-- Get all Databases
+SELECT name
+FROM sys.databases;
+
 ;---------------------------------------------------------------------
 -- List of Most Used SQL Commands
 ---------------------------------------------------------------------
