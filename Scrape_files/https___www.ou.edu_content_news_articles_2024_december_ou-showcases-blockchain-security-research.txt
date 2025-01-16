@@ -1,0 +1,75 @@
+Skip Navigation
+From Oklahoma to Thailand, OU Showcases Blockchain Security Research
+NEWS
+From Oklahoma to Thailand, OU Showcases Blockchain Security Research
+By
+Josh DeLozier
+joshdelozier@ou.edu
+Date
+Dec. 10, 2024
+NORMAN, OKLA.
+– As artificial intelligence and blockchain platforms like Ethereum revolutionize the tech landscape, two University of Oklahoma researchers were recently awarded academic fellowships to share their ongoing work at DevCon, a global conference for decentralized innovation presented by the Ethereum Foundation in Bangkok, Thailand.
+Ethereum is an open-source blockchain technology that allows users to deploy smart contracts online. These smart contracts are similar to an incredibly secure digital ledger that is shared across tens of thousands of computers worldwide instead of being controlled by a single company or person. Not only are they totally transparent, but they also reduce the need for intermediaries, reduce costs and fraud losses, and mitigate malicious events. Ethereum is considered a necessary component of a decentralized financial system.
+“The
+Ethereum Foundation
+realized many years ago that to get people using the Ethereum network, they needed to have a strong community of developers and academic researchers,” said Scott Seidenberger, a doctoral candidate in the OU Gallogly College of Engineering who attended DevCon.
+Seidenberger attended DevCon alongside
+Anindya Maiti
+, an assistant professor of computer science and data science and analytics at the Gallogly College of Engineering. The pair was previously awarded two Ethereum Foundation Academic Grants to study security aspects of the Ethereum network.
+“It was important for us to attend for several reasons, but specifically to show that there is real academic interest in these technologies,” Seidenberger said. “This technology is very interdisciplinary; you need the economic layer to work along with the technical infrastructure and social layers to solve these really complex problems. These cannot be done in a vacuum and require collaboration. That’s something I know researchers across our campus value.”
+Seidenberger’s research focuses on the security of decentralized systems like Ethereum. After spending eight years in the U.S. Air Force, he’s now using his military experience to study how security intersects with the people and physical infrastructure of these networks.
+“Because they are global in scale and decentralized with no central authority, a slew of new security challenges exists,” he said. “The Ethereum Foundation grants that Dr. Maiti and I received focus on quantitatively measuring risk to these networks and working to improve them. These technologies are advancing faster than public policy can be developed, so there are real-world implications for this research.”
+Ethereum and similar technologies are foundational to
+web3
+. Currently, users access the internet through web2 technologies controlled by big companies like Google, Facebook and Amazon. These companies own their platforms and keep users’ data. Web3 is decentralized, not owned or controlled by any company or person and allows users to control their own data.
+“The problem with decentralization is that it requires an enormous amount of computational power, known as compute. A lot of academics we talk to wish that universities like OU, and our
+Supercomputing Center
+, would take a larger role in supporting public blockchain,” he said. “The foundations of the internet were created from a consortium of universities that networked their computers together. We’d like to see them once again deploy their technologies to decentralize the web, making it very open, very permissionless and very free.”
+After reflecting on his experience at
+DevCon
+, Seidenberger continues to be a techno-optimist. He understands that college students and professionals alike are anxious about these technologies destroying their jobs or causing mass layoffs. He has a different outlook.
+“There are so many new companies being developed to solve problems like the ones we’re researching. Many of these companies were present at DevCon and are hungry for talent; not just engineers who know blockchain, but marketers who can sell this message and business professionals to help run companies, for example,” he said. “There’s a real opportunity for those looking to contribute.”
+About the University of Oklahoma
+Founded in 1890, the University of Oklahoma is a public research university located in Norman, Oklahoma. As the state’s flagship university, OU serves the educational, cultural, economic and health care needs of the state, region and nation. For more information about the university, visit
+www.ou.edu
+.
+Recent News
+Research
+December 20, 2024
+Benbrook Appointed Associate Director for Translational Research at OU Health Stephenson Cancer Center
+Doris Benbrook, Ph.D., a Presbyterian Health Foundation Presidential Professor at the University of Oklahoma College of Medicine, has been named Associate Director for Translational Research at OU Health Stephenson Cancer Center, the only National Cancer Institute-Designated Cancer Center in Oklahoma.
+Read more
+Read article: Benbrook Appointed Associate Director for Translational Research at OU Health Stephenson Cancer Center
+Read article: Benbrook Appointed Associate Director for Translational Research at OU Health Stephenson Cancer Center
+Campus & Community
+December 20, 2024
+Harold Hamm Diabetes Center at the University of Oklahoma announces new deputy director.
+The Harold Hamm Diabetes Center at the University of Oklahoma Health Sciences will gain a new deputy director, Matthew Potthoff, Ph.D., effective January 1. Potthoff will also hold the title of Harold Hamm Endowed Chair in Clinical Diabetes Research and professor of biochemistry and physiology, with a secondary appointment in the division of neurology in the OU School of Medicine.
+Read more
+Read article: Harold Hamm Diabetes Center at the University of Oklahoma announces new deputy director.
+Read article: Harold Hamm Diabetes Center at the University of Oklahoma announces new deputy director.
+Campus & Community
+December 18, 2024
+American Society of Hematology Recognizes Two OU Health Sciences Faculty
+James George, M.D., and Jennifer Holter-Chakrabarty, M.D., were recognized by the American Society of Hematology (ASH) during its annual meeting Dec. 7-10.
+Read more
+Read article: American Society of Hematology Recognizes Two OU Health Sciences Faculty
+Read article: American Society of Hematology Recognizes Two OU Health Sciences Faculty
+More OU News
+OU News
+339 W. Boyd St.
+Norman, OK 73069
+marcomm@ou.edu
+Accessibility
+Sustainability
+HIPAA
+OU Job Search
+Policies
+Legal Notices
+Copyright
+Resources and Offices
+OU Report It!
+Updated 12/10/2024 by
+OU News
+:
+cmshelp@ou.edu

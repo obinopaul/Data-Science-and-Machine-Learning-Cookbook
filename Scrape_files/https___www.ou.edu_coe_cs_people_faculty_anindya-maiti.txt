@@ -1,0 +1,60 @@
+Skip Navigation
+Anindya Maiti
+Anindya Maiti
+Assistant Professor
+Email:
+am@ou.edu
+Phone:
+(405) 325-4951
+Office:
+Devon Energy Hall Room 210-G
+Website:
+maiti.info/anindya
+Education
+Ph.D., Electrical Engineering and Computer Science
+Wichita State University
+M.S., Electrical Engineering
+Wichita State University
+B.Tech., Computer Science
+Vellore Institute of Technology
+Research Focus
+Privacy and security, micromobility and urban planning, cyber-physical systems, information assurance and network security, applied machine learning and artificial intelligence.
+Experience and Awards
+Assistant Professor, University of Oklahoma
+Postdoctoral Fellow, University of Texas at San Antonio
+Member of IEEE and ACM
+Fellow of the Eta Kappa Nu
+Best Paper Award, IEEE WristSense 2018
+Outstanding Master's Thesis Award, Wichita State University, 2015
+Biography
+Dr. Anindya Maiti is an Assistant Professor of Computer Science at the University of Oklahoma (OU), where he directs the SecretLab. SecretLab’s research focus primarily lies in the areas of privacy and security in cyber-physical systems, information assurance and network security, and applied machine learning and artificial intelligence. He is also currently working on the development of an NSF-funded micromobility testbed designed to help improve pedestrian safety and make data-driven urban planning.
+Selected Projects
+NSF CCRI: Planning: ScooterLab: Development of a Programmable and Participatory e-Scooter Testbed to Enable CISE-focused Micromobility. $100,000. October 1, 2020 - March 31, 2022.
+Selected Publications
+Mohd Sabra, Anindya Maiti, and Murtuza Jadliwala. "Background Buster: Peeking through Virtual Backgrounds in Online Video Calls." IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), June 2022.
+Nisha Vinayaga-Sureshkanth, Raveen Wijewickrama, Anindya Maiti, and Murtuza Jadliwala. "An Investigative Study on the Privacy Implications of Mobile E-scooter Rental Apps." ACM Conference on Security and Privacy in Wireless and Mobile Networks (WiSec), May 2022.
+Soundarya Ramesh, Xiao Rui, Anindya Maiti, Jong Taek Lee, Harini Ramprasad, Ananda Kumar, Murtuza Jadliwala, and Jun Han, "Acoustics to the Rescue: Physical Key Inference Attack Revisited", USENIX Security Symposium (SECURITY), August 2021.
+Raveen Wijewickrama, Anindya Maiti, and Murtuza Jadliwala, "Write to Know: On the Feasibility of Wrist Motion based User-Authentication from Handwriting", ACM Conference on Security and Privacy in Wireless and Mobile Networks (WiSec), June 2021.
+Mohd Sabra, Anindya Maiti, and Murtuza Jadliwala, "Zoom on the Keystrokes: Exploiting Video Calls for Keystroke Inference Attacks", Network & Distributed System Security Symposium (NDSS), February 2021.
+Anindya Maiti, and Murtuza Jadliwala, "Smart Light-Based Information Leakage Attacks", ACM GetMobile: Mobile Computing and Communications, Volume 24, Number 1, 2020.
+Anindya Maiti, and Murtuza Jadliwala, "Light Ears: Information Leakage via Smart Lights", Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, Volume 3, Number 3, Article 98, 2019.
+Kavita Kumari, Murtuza Jadliwala, Anindya Maiti, and Mohammad Hossein Manshaei, "Analyzing Defense Strategies Against Mobile Information Leakages: A Game-Theoretic Approach", Conference on Decision and Game Theory for Security (GameSec), October 2019.
+Anindya Maiti, Murtuza Jadliwala, Jibo He, and Igor Bilogrevic, "Side-Channel Inference Attacks on Mobile Keypads using Smartwatches", IEEE Transactions on Mobile Computing, Volume 17, Issue 9, 2018.
+School of Computer Science
+Devon Energy Hall
+110 W. Boyd St.
+Norman, OK 73019
+Phone: (405) 325-4042
+Accessibility
+Sustainability
+HIPAA
+OU Job Search
+Policies
+Legal Notices
+Copyright
+Resources and Offices
+OU Report It!
+Updated 12/19/2024 by
+School of Computer Science
+:
+cs@ou.edu
